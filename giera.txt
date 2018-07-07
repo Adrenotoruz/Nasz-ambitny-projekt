@@ -1,18 +1,18 @@
---DONE-- 1.  Pusta bia³a mapa i ruszaj¹ca siê kropka na wasd - canvas
-2.  rêce, broñ, obrót kropki
+--DONE-- 1.  Pusta biaÅ‚a mapa i ruszajÄ…ca siÄ™ kropka na wasd - canvas
+2.  --DONE--rÄ™ce, --DONE--broÅ„, obrÃ³t kropki
 3.  proste strzelanie bez fizyki
-4.  prosta mapa, pierwsze œciany, bez kolizji postaci z przeszkodami
+4.  prosta mapa, pierwsze Å›ciany, bez kolizji postaci z przeszkodami
 5. 
    5.1.  Podstawowa fizyka
    5.2.  kolizja postaci z przeszkodami
 6.  minimapa
-7.  renderowanie mapy wraz z poruszaj¹cym siê za graczem widokiem
-8.  AI botów
+7.  renderowanie mapy wraz z poruszajÄ…cym siÄ™ za graczem widokiem
+8.  AI botÃ³w
 9.  Baza Danych
 10.
    10.1. Bronie
    10.2. Proste Logowanie i Rejestracja
 11. 
-   11.1. Zaawansowana Fizyka wraz z Dopracowaniem ca³ej mapy.
+   11.1. Zaawansowana Fizyka wraz z Dopracowaniem caÅ‚ej mapy.
    11.2. Komunikacja z serwerem podczas gry
 12.   Zabezpieczenia konta, dopracowanie stronki - podstrona stastyki graczy.
