@@ -1,0 +1,11 @@
+#gameView
+		{
+			background-color: #bbbbbb;
+			width:  80%;
+			height: 70%;
+			padding-left: 0;
+			padding-right: 0;
+			margin: 0 auto;
+			margin-top: auto;
+			display: block
+		}
