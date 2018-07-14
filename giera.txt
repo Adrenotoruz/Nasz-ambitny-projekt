@@ -1,5 +1,5 @@
 --DONE-- 1.  Pusta biała mapa i ruszająca się kropka na wasd - canvas
-2.  --DONE--ręce, --DONE--broń, obrót kropki
+--DONE-- 2.  ręce, broń, obrót ręki
 3.  proste strzelanie bez fizyki
 4.  prosta mapa, pierwsze ściany, bez kolizji postaci z przeszkodami
 5. 
