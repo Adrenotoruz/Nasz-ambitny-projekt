@@ -12,18 +12,27 @@ window.addEventListener("load", function () {
 		
 		var angle;
 		
-		canvas.addEventListener('mousemove', function(e){
-			
-			//angle = atan2(( ALIEN.y - PLAYER.y ),( ALIEN.x - PLAYER.x ) ) * 180 / M_PI + 180;
-			// var ab = Math.sqrt(Math.pow(e.clientX-x,2)+Math.pow(e.clientY-y,2));
-			
+		var mouseX;
+		var mouseY;
+		
+		function changeAimingPoint(e){
+			mouseX = e.clientX;
+			mouseY = e.clientY;
+			console.log("mouse x: "+e.clientX);
+			console.log("mouse y: "+e.clientY);
 			var a = Math.sqrt(Math.pow(e.clientX-x,2)+Math.pow(e.clientY-y,2));
 			var b = Math.sqrt(Math.pow(e.clientX-x,2)+Math.pow(0,2));
-			angle = Math.atan2(( y - e.clientY ),( x - e.clientX  ) ) * 180 / Math.PI + 180;
+			angle = Math.atan2(( y - e.clientY ),( x - e.clientX  ) ) * 180 / Math.PI + 90;
 			// angle =  Math.acos(Math.cos(b/a))*(180/Math.PI);
 			console.log("x: "+x);
-			// console.log("y: "+y);
+			console.log("y: "+y);
 			console.log(angle);
+		}
+		
+		canvas.addEventListener('mousemove', function(e){
+			
+			changeAimingPoint(e);
+
 		}, false);
 		
 		var width = canvas.width;
@@ -42,7 +51,7 @@ window.addEventListener("load", function () {
 			    
 
     function drawRotatedRect(x,y,width,height,degrees){
-
+		
         // first save the untranslated/unrotated context
         context.save();
 
@@ -65,7 +74,8 @@ window.addEventListener("load", function () {
 
     }
 		function drawPlayer()
-		{			
+		{	
+			changeAimingPoint({clientY: mouseY, clientX: mouseX});
 			//angle++;
 			if(downPressed) y+=playerSpeed;
 			if(upPressed) y-=playerSpeed;			
