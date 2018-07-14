@@ -14,10 +14,14 @@ window.addEventListener("load", function () {
 		
 		canvas.addEventListener('mousemove', function(e){
 			
+			//angle = atan2(( ALIEN.y - PLAYER.y ),( ALIEN.x - PLAYER.x ) ) * 180 / M_PI + 180;
+			// var ab = Math.sqrt(Math.pow(e.clientX-x,2)+Math.pow(e.clientY-y,2));
+			
 			var a = Math.sqrt(Math.pow(e.clientX-x,2)+Math.pow(e.clientY-y,2));
 			var b = Math.sqrt(Math.pow(e.clientX-x,2)+Math.pow(0,2));
-			angle =  Math.acos(Math.cos(b/a))*(180/Math.PI);
-			// console.log("x: "+x);
+			angle = Math.atan2(( y - e.clientY ),( x - e.clientX  ) ) * 180 / Math.PI + 180;
+			// angle =  Math.acos(Math.cos(b/a))*(180/Math.PI);
+			console.log("x: "+x);
 			// console.log("y: "+y);
 			console.log(angle);
 		}, false);
