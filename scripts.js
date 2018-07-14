@@ -66,8 +66,8 @@ window.addEventListener("load", function () {
         //       so the rect needs to be offset accordingly when drawn
         context.rect( -width+player/10, -height, width,height);
 
-        // context.fillStyle="gold";
-        // context.fill();
+        context.fillStyle="black";
+        context.fill();
 
         // restore the context to its untranslated/unrotated state
         context.restore();
@@ -83,17 +83,16 @@ window.addEventListener("load", function () {
 			if(leftPressed) x-=playerSpeed;					
 			
 			context.clearRect(0, 0, canvas.width, canvas.height);
+			drawRotatedRect(x-player/10,y,player/5,-player*1.35,angle );
+				
 			
 			context.stroke();
 			context.beginPath();
 			context.arc(x,y, player, 0, Math.PI*2, false);
 			context.fillStyle = "black";
 			context.fill();
-			//context.fillRect(x-player/10,y,player/5,-player*1.35);
-			drawRotatedRect(x-player/10,y,player/5,-player*1.35,angle );			
-			context.fillStyle = "black";
-			context.fill();
 			context.closePath();
+			//context.fillRect(x-player/10,y,player/5,-player*1.35);		
 		}
 		setInterval(drawPlayer, 10);
 		
