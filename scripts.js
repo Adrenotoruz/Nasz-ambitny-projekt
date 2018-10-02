@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
 
-		//testtowy komentarz			
+		//testtowy komentarz 3			
 	
  		var canvas = document.getElementById("gameView");
 		var context = canvas.getContext("2d");
