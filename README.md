@@ -1,4 +1,4 @@
-# Nasz-ambitny-projekt
+# javascriptGame
 
 Suspended project since 10.2018
 
